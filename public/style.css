@@ -24,7 +24,6 @@ h1 {
 }
 
 .typehere {
-  /* border: 1px solid #084298; */
   border-radius: 5px;
   box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.3);
 }
@@ -88,7 +87,7 @@ form {
 }
 
 button {
-  min-height: 50px;
+  height: 50px;
   width: 50px;
   border-radius: 50%;
   border-color: transparent;
@@ -262,7 +261,12 @@ footer .foot a:hover {
   }
 
   input[type="text"] {
-    width: 17rem;
+    width: 16rem;
+    font-size: 1rem;
+  }
+
+  ::placeholder {
+    font-size: 1rem;
   }
 
   input[type="checkbox"] {
@@ -272,5 +276,9 @@ footer .foot a:hover {
   input[type="checkbox"] {
     width: 20px;
     height: 20px;
+  }
+  button.pplus {
+    width: 40px;
+    height: 40px;
   }
 }
