@@ -1,14 +1,17 @@
+/* Set background color and font family for the entire page */
 html {
   background-color: #cfe2ff;
   font-family: 'Lato', sans-serif;
 }
 
+/* Header styles */
 h1 {
   color: #fff;
   padding: 13px;
   font-size: 1.7rem;
 }
 
+/* Main content container */
 .box {
   max-width: 60rem;
   margin: 2rem auto;
@@ -17,17 +20,20 @@ h1 {
   box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
 
+/* Heading styles */
 .heading {
   background-color: #084298;
   text-align: center;
   max-width: 25rem;
 }
 
+/* Input field styles */
 .typehere {
   border-radius: 5px;
   box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.3);
 }
 
+/* List item styles */
 .item {
   min-height: 70px;
   display: flex;
@@ -36,11 +42,13 @@ h1 {
   justify-content: space-between;
 }
 
+/* Hover effect on list items */
 .item:hover {
   background-color: #f7f7f7;
   border-radius: 0.5rem;
 }
 
+/* Delete item button styles */
 .delete-item {
   border: none;
   background-color: transparent;
@@ -48,44 +56,47 @@ h1 {
   transition: color 0.2s;
 }
 
+/* Hover effect on delete item button */
 .delete-item:hover {
   color: #ff0000;
 }
 
+/* Plus button styles */
 .pplus:hover {
   background-color: #520dc2;
   transition: color 0.2s;
 }
 
+/* Remove border-bottom from the last list item */
 .item:last-child {
   border-bottom: 0;
 }
 
-input:checked+p {
+/* Apply line-through style to text when checkbox is checked */
+input:checked + p {
   text-decoration: line-through;
 }
 
+/* Checkbox styles */
 input[type="checkbox"] {
   margin: 1rem;
 }
 
-input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
-}
-
+/* Paragraph text styles */
 p {
   margin: 0;
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 20px;
   color: #00204a;
 }
 
+/* Form styles */
 form {
   text-align: center;
   padding-left: 1rem;
 }
 
+/* Button styles */
 button {
   height: 50px;
   width: 50px;
@@ -99,26 +110,29 @@ button {
   cursor: pointer;
 }
 
+/* Input text styles */
 input[type="text"] {
   text-align: center;
   height: 60px;
   top: 10px;
   border: none;
   background: transparent;
-  font-size: 20px;
-  font-weight: 200;
+  font-size: 1.4rem;
   width: 52rem;
 }
 
+/* Focus style for input text */
 input[type="text"]:focus {
   outline: none;
   box-shadow: inset 0 -3px 0 0 #084298;
 }
 
+/* Placeholder text styles */
 ::placeholder {
   color: #B4B4B3;
 }
 
+/* Footer styles */
 footer {
   flex: 0 0 auto;
   color: #084298;
@@ -129,10 +143,12 @@ footer {
   font-family: 'PT Serif', serif;
 }
 
+/* Footer content styles */
 .foot {
   margin-top: 3rem;
 }
 
+/* Footer link styles */
 .footer-link {
   display: inline-block;
   color: #084298;
@@ -140,6 +156,7 @@ footer {
   transition: 0.5s;
 }
 
+/* Hover effect on footer links */
 footer .foot a:hover {
   transform: translateY(-15px);
   color: #520dc2;
@@ -221,6 +238,12 @@ footer .foot a:hover {
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
   }
+
+  input[type="checkbox"] {
+    margin: 1rem;
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -262,21 +285,19 @@ footer .foot a:hover {
 
   input[type="text"] {
     width: 16rem;
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: normal;
   }
 
   ::placeholder {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: normal;
   }
 
   input[type="checkbox"] {
     margin: 1rem;
   }
 
-  input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-  }
   button.pplus {
     width: 40px;
     height: 40px;
